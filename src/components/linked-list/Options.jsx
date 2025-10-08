@@ -53,7 +53,7 @@ const Options = ({
       {/* Header */}
       <div className="text-center mb-6">
         <h2 className="text-3xl font-bold text-blue-800 mb-2 animate-slide-in-left">
-          🔗 Operaciones de Lista Enlazada
+          Operaciones de Lista Enlazada
         </h2>
         <p className="text-blue-600 animate-slide-in-right animate-delay-200">
           Interactúa con la estructura de datos
@@ -112,7 +112,6 @@ const Options = ({
               disabled={isAnimating || !searchValue.trim()}
               className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 disabled:bg-gray-400 transition-all duration-300 transform hover:scale-105"
             >
-              🔍
             </button>
           </div>
         </div>

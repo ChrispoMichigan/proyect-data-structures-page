@@ -113,7 +113,6 @@ const LinkedListData = ({
       <div className="min-h-32 flex items-center justify-center p-8 bg-gray-50 rounded-lg overflow-x-auto">
         {nodes.length === 0 ? (
           <div className="text-center animate-bounce-in">
-            <div className="text-6xl text-gray-300 mb-4">📝</div>
             <p className="text-gray-500 text-lg">La lista está vacía</p>
             <p className="text-gray-400 text-sm">Agrega algunos nodos para comenzar</p>
           </div>
