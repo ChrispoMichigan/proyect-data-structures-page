@@ -11,20 +11,20 @@ const LinkedList = () => {
   const [searchingNode, setSearchingNode] = useState(null);
   const [message, setMessage] = useState('');
 
-  // Función para mostrar mensajes temporales
+  // funcion para mostrar mensajes temporales
   const showMessage = (msg, duration = 3000) => {
     setMessage(msg);
     setTimeout(() => setMessage(''), duration);
   };
 
-  // Función para animar operaciones
+  // funcion para animar operaciones
   const animateOperation = async (operation, duration = 1000) => {
     setIsAnimating(true);
     await new Promise(resolve => setTimeout(resolve, duration));
     setIsAnimating(false);
   };
 
-  // Insertar al inicio
+  // insertar al inicio
   const insertAtBeginning = useCallback(async (value) => {
     setInsertingNode(0);
     showMessage(`Insertando "${value}" al inicio de la lista`);
@@ -36,7 +36,7 @@ const LinkedList = () => {
     showMessage(`"${value}" insertado exitosamente al inicio`);
   }, []);
 
-  // Insertar al final
+  // insertar al final
   const insertAtEnd = useCallback(async (value) => {
     const newIndex = nodes.length;
     setInsertingNode(newIndex);
@@ -49,7 +49,7 @@ const LinkedList = () => {
     showMessage(`"${value}" insertado exitosamente al final`);
   }, [nodes.length]);
 
-  // Insertar en posición específica
+  // insertar en posicion especifica
   const insertAtPosition = useCallback(async (value, position) => {
     if (position < 0 || position > nodes.length) {
       showMessage(`Posición ${position} inválida. Debe estar entre 0 y ${nodes.length}`);
@@ -70,7 +70,7 @@ const LinkedList = () => {
     showMessage(`"${value}" insertado exitosamente en la posición ${position}`);
   }, [nodes.length]);
 
-  // Eliminar nodo
+  // eliminar nodo
   const deleteNode = useCallback(async (value) => {
     const index = nodes.findIndex(node => node.value === value);
     
@@ -89,7 +89,7 @@ const LinkedList = () => {
     showMessage(`"${value}" eliminado exitosamente de la lista`);
   }, [nodes]);
 
-  // Buscar nodo
+  // buscar nodo
   const searchNode = useCallback(async (value) => {
     setSearchingNode(null);
     showMessage(`Buscando "${value}" en la lista...`);
@@ -103,7 +103,7 @@ const LinkedList = () => {
         setHighlightedNode(i);
         showMessage(`¡"${value}" encontrado en la posición ${i}!`);
         
-        // Quitar highlight después de 3 segundos
+        // quitar el highlight 
         setTimeout(() => setHighlightedNode(null), 3000);
         return;
       }
@@ -113,7 +113,7 @@ const LinkedList = () => {
     showMessage(`"${value}" no se encontró en la lista`);
   }, [nodes]);
 
-  // Limpiar lista
+  // limpiar lista
   const clearList = useCallback(() => {
     if (nodes.length === 0) {
       showMessage('La lista ya está vacía');
@@ -152,7 +152,7 @@ const LinkedList = () => {
           isAnimating={isAnimating}
         />
 
-        {/* Componente de visualización */}
+        {/* componente de visualizacion */}
         <LinkedListData
           nodes={nodes}
           highlightedNode={highlightedNode}
@@ -162,7 +162,7 @@ const LinkedList = () => {
           message={message}
         />
 
-        {/* Botón de regreso */}
+        {/* boton de regreso */}
         <div className="mt-8 text-center">
           <button 
             onClick={() => window.history.back()}

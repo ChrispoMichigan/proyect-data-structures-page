@@ -1,4 +1,6 @@
-import React from 'react';
+// src/pages/Tree.jsx
+import React from "react";
+import BSTView from "../components/tree/BSTView.jsx";
 
 const Tree = () => {
   return (
@@ -12,13 +14,13 @@ const Tree = () => {
             Estructura jerárquica para organizar datos
           </p>
         </div>
-        
+
         <div className="bg-white rounded-lg shadow-xl p-8 animate-fade-in-up">
-          
+          <BSTView />
           <div className="mt-8 text-center">
-            <button 
+            <button
               onClick={() => window.history.back()}
-              className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 animate-bounce-in"
+              className="bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 rounded-lg font-semibold transition-colors duration-300 animate-bounce-in"
             >
               ← Volver al inicio
             </button>

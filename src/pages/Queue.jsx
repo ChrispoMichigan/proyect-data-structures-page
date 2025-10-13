@@ -1,4 +1,6 @@
-import React from 'react';
+// src/pages/Queue.jsx
+import React from "react";
+import QueueView from "../components/queue/QueueView.jsx";
 
 const Queue = () => {
   return (
@@ -12,13 +14,13 @@ const Queue = () => {
             Estructura FIFO (primero en entrar, primero en salir)
           </p>
         </div>
-        
+
         <div className="bg-white rounded-lg shadow-xl p-8 animate-fade-in-up">
-          
+          <QueueView />
           <div className="mt-8 text-center">
-            <button 
+            <button
               onClick={() => window.history.back()}
-              className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 animate-bounce-in"
+              className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 rounded-lg font-semibold transition-colors duration-300 animate-bounce-in"
             >
               ← Volver al inicio
             </button>

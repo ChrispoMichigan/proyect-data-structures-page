@@ -9,7 +9,7 @@ const Sections = () => {
     {
       id: 'linked-list',
       title: 'Lista enlazada',
-      description: 'Conjunto de nodos donde cada uno apunta al siguiente. Ideal para inserciones rápidas.',
+      description: 'Secuencia de nodos unidos por enlaces. Permite insertar y eliminar sin mover el resto de elementos..',
       color: 'blue',
       icon: '🔗',
       delay: 500
@@ -17,7 +17,7 @@ const Sections = () => {
     {
       id: 'stack',
       title: 'Pila (Stack)',
-      description: 'Estructura LIFO (último en entrar, primero en salir).',
+      description: 'Colección donde solo interactúas con el elemento de arriba. Útil para deshacer acciones y manejar llamadas.',
       color: 'green',
       icon: '📚',
       delay: 700
@@ -25,7 +25,7 @@ const Sections = () => {
     {
       id: 'queue',
       title: 'Cola (Queue)',
-      description: 'Estructura FIFO (primero en entrar, primero en salir).',
+      description: 'Colección que atiende elementos en el orden en que llegan. Ideal para turnos y procesamiento secuencial.',
       color: 'purple',
       icon: '🚶‍♂️',
       delay: 900
@@ -33,7 +33,7 @@ const Sections = () => {
     {
       id: 'tree',
       title: 'Árbol (Tree)',
-      description: 'Estructura jerárquica. Ej: árbol binario de búsqueda para ordenar datos.',
+      description: 'Estructura jerárquica que organiza valores para ubicarlos rápido: menores a la izquierda y mayores a la derecha',
       color: 'orange',
       icon: '🌳',
       delay: 1100
