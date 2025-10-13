@@ -124,7 +124,7 @@ const Options = ({
           disabled={isAnimating || !inputValue.trim()}
           className="px-4 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 disabled:bg-gray-400 transition-all duration-300 transform hover:scale-105 animate-bounce-in animate-delay-600"
         >
-          <span className="block text-sm font-semibold">➕ Inicio</span>
+          <span className="block text-sm font-semibold">Inicio</span>
           <span className="block text-xs">Insertar al inicio</span>
         </button>
 
@@ -133,7 +133,7 @@ const Options = ({
           disabled={isAnimating || !inputValue.trim()}
           className="px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:bg-gray-400 transition-all duration-300 transform hover:scale-105 animate-bounce-in animate-delay-700"
         >
-          <span className="block text-sm font-semibold">➕ Final</span>
+          <span className="block text-sm font-semibold">Final</span>
           <span className="block text-xs">Insertar al final</span>
         </button>
 
@@ -142,7 +142,7 @@ const Options = ({
           disabled={isAnimating || !inputValue.trim() || !position}
           className="px-4 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 disabled:bg-gray-400 transition-all duration-300 transform hover:scale-105 animate-bounce-in animate-delay-800"
         >
-          <span className="block text-sm font-semibold">➕ Posición</span>
+          <span className="block text-sm font-semibold">Posición</span>
           <span className="block text-xs">Insertar en pos.</span>
         </button>
 
@@ -151,7 +151,7 @@ const Options = ({
           disabled={isAnimating || !inputValue.trim()}
           className="px-4 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 disabled:bg-gray-400 transition-all duration-300 transform hover:scale-105 animate-bounce-in animate-delay-900"
         >
-          <span className="block text-sm font-semibold">🗑️ Eliminar</span>
+          <span className="block text-sm font-semibold">Eliminar</span>
           <span className="block text-xs">Eliminar nodo</span>
         </button>
 
@@ -160,7 +160,7 @@ const Options = ({
           disabled={isAnimating}
           className="px-4 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 disabled:bg-gray-400 transition-all duration-300 transform hover:scale-105 animate-bounce-in animate-delay-1000"
         >
-          <span className="block text-sm font-semibold">🧹 Limpiar</span>
+          <span className="block text-sm font-semibold">Limpiar</span>
           <span className="block text-xs">Vaciar lista</span>
         </button>
       </div>

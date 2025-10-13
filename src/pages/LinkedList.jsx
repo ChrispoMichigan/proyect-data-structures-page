@@ -134,7 +134,7 @@ const LinkedList = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-5xl font-bold text-blue-800 mb-4 animate-fade-down">
-            🔗 Lista Enlazada Interactiva
+            Lista Enlazada Interactiva
           </h1>
           <p className="text-xl text-blue-600 animate-fade-in animate-delay-300">
             Explora y manipula una lista enlazada en tiempo real
